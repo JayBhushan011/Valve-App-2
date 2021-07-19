@@ -1,0 +1,117 @@
+
+.overview-div{
+    margin-left: 14%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.overview-title{
+    font-size: 3em;
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    margin-bottom: 2%;
+    color: rgb(43, 8, 88);
+}
+
+.trends-container{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(104, 102, 102, 0.11), 0 2px 4px rgba(104, 102, 102, 0.11);
+    width: 90%;
+    height: 100px;
+}
+
+.asset-health{
+    position: relative;
+    margin-left: 1%;
+    height: 100px;
+    width: 20%;
+    line-height: 100px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4vw;
+}
+
+.asset-health-chart{
+    position: relative;
+    bottom: 100px;
+    left: 20%;
+}
+
+.next-maintenance{
+    position: relative;
+    bottom: 210px;
+    left: 60%;
+    line-height: 100px;
+    height: 100px;
+    width: 40%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4vw;
+}
+
+.pie-chart-container{
+    margin-top: 2%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(104, 102, 102, 0.11), 0 2px 4px rgba(104, 102, 102, 0.11);
+    width: 90%;
+    height: 400px;
+}
+
+.pie-chart-savgen{
+    position: relative;
+    bottom: 63vh;
+    left: 50%;
+    width: 100%;
+}
+
+.summary-headings{
+    position: relative;
+    margin-left: 1%;
+    height: 100px;
+    width: 20%;
+    line-height: 100px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4vw;
+    
+}
+
+.pie-chart{
+    position: relative;
+    bottom: 100px;
+}
+
+.maintenance-report-container{
+    margin-top: 2%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(104, 102, 102, 0.11), 0 2px 4px rgba(104, 102, 102, 0.11);
+    width: 44%;
+    height: 400px;
+}
+
+.maintenance-report-headings{
+    position: relative;
+    margin-left: 1%;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4vw;
+    
+}
+
+.next-service-container{
+    position: relative;
+    left: 45%;
+    bottom: 412px;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(104, 102, 102, 0.11), 0 2px 4px rgba(104, 102, 102, 0.11);
+    width: 44%;
+    height: 400px;
+}
