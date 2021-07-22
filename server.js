@@ -3,8 +3,22 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
+const errorHandler = require("./middleware/error")
 
 
+// DB Setup 
+const uri = process.env.DB_URI;
+
+mongoose.connect(uri, {
+  useNewUrlParser: true, 
+  useUnifiedTopology: true,
+});
+
+const connection = mongoose.connection;
+connection.once('open', () => {
+  console.log("MongoDB database connection established successfully");
+})
+// ********
 
 // Middleware 
 app.use(cors());
@@ -13,37 +27,30 @@ app.use(express.json()); //recognize the incoming Request Object as a JSON Objec
 app.use(express.urlencoded({extended: false})); //express to recognize the incoming Request Object as strings or arrays
 // ******** 
 
-
-// Server Setup
-const PORT = process.env.PORT || 5000
-
-// ********
-
-
-// DB Setup 
-const uri = process.env.DB_URI;
-
-mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
-
-const connection = mongoose.connection;
-connection.once('open', () => {
-  console.log("MongoDB database connection established successfully");
-})
-// ********
-
-
 // Router Settings 
 
-const userRoute = require('./routes/user');
-app.use('/login', userRoute);
+app.use('/api/auth', require("./routes/auth"));
+app.use('/api/private', require("./routes/private"));
+
+// const userRoute = require('./routes/auth');
+// app.use('/login', userRoute);
 
 // ******** 
 
-app.get("/", function(request, response) {
-  response.send("<h1>Hello World!</h1>")
-})
+// Error Handler (should be last piece of middleware)
+app.use(errorHandler)
+// *******
 
-app.listen(PORT, function() {
+
+const PORT = process.env.PORT || 3001;
+
+
+const server = app.listen(PORT, function() {
   console.log("Server is running on port " + PORT)
 });
+
+process.on("unhandledRejection", (err,promise) => {
+  console.log(`Logged Error: ${err}`);
+  server.close( () => process.exit(1) );
+})
 

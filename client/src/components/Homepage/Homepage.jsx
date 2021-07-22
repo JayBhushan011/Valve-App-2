@@ -10,6 +10,7 @@ function Homepage(){
     };
 
     return(
+        <>
         <div style={{backgroundImage: `url(${Bg})`,
             height: "100vh",
             width:"100vw",
@@ -39,6 +40,7 @@ function Homepage(){
         
         
         </div>
+        </>
 
 
     )
