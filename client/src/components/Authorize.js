@@ -24,9 +24,9 @@ const Authorize = () => {
       fetchPrivateDate();
     }, []);
     return error ? (
-        true
-    ) : (
         false
+    ) : (
+        true
     );
   };
 

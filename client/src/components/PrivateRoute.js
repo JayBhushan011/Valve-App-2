@@ -1,21 +1,28 @@
-import { Redirect, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Redirect, Route, Router } from "react-router-dom";
 import Authorize from "./Authorize";
 
 
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
-  let authorize = Authorize();
+  
+  const authorize =  Authorize();
   return (
     <Route
       {...rest}
       render={(props) =>
-        authorize
+         authorize
           ? (
-          
-          <Redirect to="/login" />
+          <>
+          <Component {...props}  />
+          </>  
           
         ) : (
-          <Component {...props} />
+          
+          <>
+          
+          <Redirect to="/login"  />
+          </>
         )
       }
     />
