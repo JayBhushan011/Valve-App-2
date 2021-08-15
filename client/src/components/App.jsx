@@ -10,6 +10,7 @@ import Sidebar from "./Header/Sidebar/Sidebar.jsx"
 import Login from "./User/Login.jsx"
 import PipelineMap from "./Dashboard/PipelineMap"
 import Overview from "./Dashboard/Overview"
+import Valves from "./Dashboard/Valves/Valves"
 // ******
 
 // Routes   ---- MAKE IT PRIVATE ROUTE TO CHECK IF AUTHTOKEN IS PASSED 
@@ -25,6 +26,7 @@ function App(){
         <Route path = "/dashboard" exact component = {Dashboard} />
         <Route path = "/dashboard/pipeline-map" exact component = {PipelineMap} />
         <Route path = "/dashboard/overview" exact component = {Overview} />
+        <Route path = "/dashboard/myvalves" exact component = {Valves} />
         
     </Router>
     

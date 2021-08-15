@@ -1,6 +1,8 @@
 import React from "react";
-import {AiFillHome, AiFillPieChart, AiFillPhone} from "react-icons/ai";
-import {IoAnalyticsSharp  } from 'react-icons/io5';
+import {AiFillHome, AiFillPieChart} from "react-icons/ai";
+import {GiValve} from "react-icons/gi"
+import {FaMapMarkedAlt} from "react-icons/fa"
+
 
 
 export const SidebarData = [
@@ -22,14 +24,14 @@ export const SidebarData = [
         title : "Pipeline Map",
         key : 3,
         path : "/dashboard/pipeline-map",
-        icon : <IoAnalyticsSharp />,
+        icon : <FaMapMarkedAlt />   ,
         cName : 'side-text'
     },
     {   
-        title : "Contact",
+        title : "My Valves",
         key : 4,
-        path : "/dashboard/contact",
-        icon : <AiFillPhone />,
+        path : "/dashboard/myvalves",
+        icon : <GiValve />,
         cName : 'side-text'
     }
 

@@ -10,7 +10,7 @@ import "./Header.css"
 
 function Header(){
   const [loggedIn, setLoggedIn] = useState(localStorage.getItem("authToken") ? true : false);
-
+  
   function logout(){
     setLoggedIn(false);
     localStorage.removeItem("authToken");
@@ -37,11 +37,10 @@ function Header(){
       <NavDropdown style={{marginLeft:"2%"}} title="Learn more" id="basic-nav-dropdown">
         <NavDropdown.Item href="/contact">Contact Us</NavDropdown.Item>
         <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
-        <NavDropdown.Item href="/Savgen">Savgen</NavDropdown.Item>
+        <NavDropdown.Item href="https://www.savgen.com" target="_blank" rel="noopener noreferrer">Savgen</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="/register"> Register </NavDropdown.Item>
       </NavDropdown>
-      {console.log(loggedIn)}
       {loggedIn ?  <Nav.Link onClick={logout} style={{marginLeft:"190%"}} href="/"> Logout </Nav.Link> : null }
     </Nav>
   </Navbar.Collapse>

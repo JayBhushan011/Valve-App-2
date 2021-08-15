@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
+  _id: Schema.Types.ObjectId,
   username: {
     type: String, 
     required: [true, "Please provide a username"]
@@ -22,6 +23,8 @@ const userSchema = new Schema({
     minlength: 6,
     select: false
   },
+  Valves: [{ type: Schema.Types.ObjectId, ref: 'Valve' }],
+
   resetPasswordToken: String,
   resetPasswordExpire: Date
   

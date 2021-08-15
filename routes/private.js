@@ -1,3 +1,4 @@
+// THIS ROUTE IS USED TO VALIDATE USERS
 const express = require("express");
 const router = express.Router();
 const { getPrivateData } = require("../controllers/private");

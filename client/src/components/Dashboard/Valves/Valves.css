@@ -1,0 +1,139 @@
+.valve-container{
+    margin-left: 12.5%;
+    margin-top: 2%;
+    margin-right: 0.5%;
+
+}
+
+.valve-component{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(104, 102, 102, 0.11), 0 2px 4px rgba(104, 102, 102, 0.11);
+    width: 90%;
+    padding: 2%;
+    margin-top:15px;
+    display: inline-block;
+}
+
+.title{
+    font-size: 3em;
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    color: rgb(43, 8, 88);
+}
+
+.admin-button{
+    position:relative;
+    margin-left: 80%;
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 1vw;
+    background: #eb1515;
+    padding: 6px 16px 6px 16px;
+    /* border: solid #eb1515 2px; */
+    text-decoration: none;
+}
+
+.admin-button:hover{
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    
+}
+
+.valve-title{
+    margin-bottom: 15px;
+}
+.valve-content{
+}
+
+.valve-description{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.valve-health{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .right {
+    margin-left: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .left {
+    margin-right:5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+.button-container{
+    overflow: hidden;
+    margin: 50px 100px 50px 0px;
+}
+.new-valve-button{
+    
+    size: 30;
+    cursor: pointer;
+    color: rgb(43, 8, 88);
+}
+
+.button-container:hover .new-valve-button{
+    transition: 0.5s;
+    transform: rotateY(180deg);
+    color: rgb(43, 8, 88);
+}
+.button-text{
+    display: inline;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+.button-container:hover .button-text{
+    visibility:visible;
+}
+
+.add-valve-container{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(104, 102, 102, 0.11), 0 2px 4px rgba(104, 102, 102, 0.11);
+    width: 90%;
+    padding: 2%;
+    margin-top:10px;
+    display: inline-block;
+}
+
+.add-valve-button{
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 1.5vw;
+    background: #eb1515;
+    padding: 10px 20px 10px 20px;
+    /* border: solid #eb1515 2px; */
+    text-decoration: none;
+    margin-top:15px;
+}
+
+.add-valve-button:hover{
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    
+}
+

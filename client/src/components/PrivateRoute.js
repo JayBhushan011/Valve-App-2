@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { Redirect, Route, Router } from "react-router-dom";
+import { Redirect, Route } from "react-router-dom";
 import Authorize from "./Authorize";
 
 
