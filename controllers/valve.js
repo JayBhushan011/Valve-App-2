@@ -80,3 +80,6 @@ const sendValves =  async (userID,res, next) => {
     }
 };
 
+exports.newEnum = async (req,res,next) => {
+    
+}

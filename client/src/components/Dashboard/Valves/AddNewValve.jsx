@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Row, Col } from "react-bootstrap";
+import { ValveTypes, ValveManufacturers } from "./DataValidator";
 
 function AddValveForm() {
   const [type, setType] = useState("");
@@ -85,9 +86,9 @@ function AddValveForm() {
                 setType(e.target.value);
               }}
             >
-              <option value="Ball">Ball</option>
-              <option value="Plug">Plug</option>
-              <option value="Gate">Gate</option>
+              {ValveTypes.map((x) => (
+                <option value={x.Name}> {x.Name}</option>
+              ))}
             </Form.Control>
           </Form.Group>
 

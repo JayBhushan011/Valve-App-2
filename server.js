@@ -31,8 +31,7 @@ app.use(express.urlencoded({extended: false})); //express to recognize the incom
 
 app.use('/api/auth', require("./routes/auth"));
 app.use('/api/private', require("./routes/private"));
-app.use('/api/valvedata', require("./routes/valve"));
-
+app.use("/api/valvedata", require("./routes/valve"));
 // const userRoute = require('./routes/auth');
 // app.use('/login', userRoute);
 

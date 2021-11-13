@@ -1,0 +1,20 @@
+.edit-btn-on{
+    box-shadow: inset;
+    margin-bottom: 10px;
+
+}
+
+.edit-btn-off{
+    margin-bottom:10px;
+}
+.save-btn{
+    margin-left: 10px;
+}
+
+.input-style{
+    width:60%;
+    outline: 1;
+    background: transparent;
+    border: 1px solid Aqua;
+    
+}

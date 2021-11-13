@@ -11,6 +11,10 @@ const valveSchema = new Schema(
     ValveType: {
       type: String,
       required: [true, "Please provide a valve type"],
+      // enum: {
+      //   values: ["Ball", "Plug", "Gate"],
+      //   message: "{VALUE} is not supported",
+      // },
     },
 
     Make: {
